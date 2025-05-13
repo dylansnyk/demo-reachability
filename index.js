@@ -12,7 +12,7 @@ app.post('/', (req, res) => {
   console.log('Received body:', req.body);
 
   // Make the vulnerable 'marked' package reachable:
-  const markdown = marked(req.body.input);
+//   const markdown = marked(req.body.input);
 
   res.json({ output: markdown });
 });
